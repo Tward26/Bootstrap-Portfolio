@@ -12,8 +12,9 @@
 </head>
 
 <!--Body class and style to make sticky footer work-->
+
 <body class="d-flex flex-column" style="min-height: 100vh; background-image: url(assets/images/dark-honeycomb.png)">
-    
+
     <!-- Fluid container to make navbar span entire page width-->
     <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-md navbar-light">
@@ -46,36 +47,29 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
-                                <h1 class="card-title" style="color:#4aaaa5">About Me</h1>
+                                <h1 class="card-title" style="color:#4aaaa5">Contact</h1>
                                 <hr>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3 col-12 mb-2">
-                                <img class="img-fluid" src="assets/images/tyler_ward.jpg" alt="Picture of Tyler Ward" />
-                            </div>
-                            <div class="col-md-9 col-12">
-                                <p class="card-text">My name is Tyler Ward, I'm a nerdy new dad who plays Dungeons and
-                                    Dragons and has a collegiate background in Animal Science and Entomology. I've
-                                    worked a lot of jobs since graduating college, none of which were in my fields of study but
-                                    it's taught me a lot about working with people and finding out where my interests
-                                    lie. Currently I'm employed at a game/hobby retail store in Lawrence, KS and while I
-                                    enjoy my job, coworkers, and clientele, I wanted more for myself and more time
-                                    with my young family.</p>
-                                <p class="card-text">
-                                    I've always had a love of computers having grown up with them from starting with
-                                    Windows 3.1 and got to watch the internet develop from the AOL disk days onward.
-                                    Recently I decided to take the plunge into web development by enrolling in a coding
-                                    bootcamp at the University of Kansas. It has definitely been one of the more
-                                    difficult undertakings in my life but very rewarding and enlightening to learn how
-                                    all the pieces fit together to make a functioning and aesthetically pleasing
-                                    website.</p>
-                                <p class="card-text">
-                                    I want to provide my clients with just that, websites that are functional, easy to
-                                    navigate, look good, and keep their clientele coming back and happy. So if you are
-                                    in the market for a new website, application, or looking to bring another web
-                                    developer onto your team, please reach out to me. You can contact me via the contact
-                                    link on the top right and fill out the simple form.</p>
+                            <div class="col-12 mb-2">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputName">Name:</label>
+                                        <input type="name" class="form-control" id="inputName" placeholder="John Smith">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail">Email address:</label>
+                                        <input type="email" class="form-control" id="inputEmail"
+                                            placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputMessage">Message:</label>
+                                        <textarea class="form-control" id="inputMessage"
+                                            rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                             </div>
                         </div>
                     </div>
